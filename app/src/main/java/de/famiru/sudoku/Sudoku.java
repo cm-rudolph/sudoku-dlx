@@ -77,7 +77,7 @@ public class Sudoku {
 
     public Optional<int[][]> solve() {
         List<List<ElementInfo>> solution = dlx.solve();
-        LOGGER.info("Statistics: {}", dlx.getStats());
+        //LOGGER.info("Statistics: {}", dlx.getStats());
         if (solution.isEmpty()) {
             return Optional.empty();
         }
